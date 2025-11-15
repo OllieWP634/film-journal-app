@@ -54,3 +54,35 @@ a {
     text-decoration: none;
     color: black;
 }
+
+.page-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+/* MOVIE POSTER INPUT */
+
+.carousel-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 80vw;
+    gap: 3rem;
+}
+
+.poster {
+    width: 35rem;
+    height: 50rem;
+    border-radius: 1rem;
+    background-color: rgb(66, 66, 66);
+    background-size: cover;
+    box-shadow: rgba(0, 0, 0, 1) 0px 0px 15px;
+    border: 0.5rem solid black;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
