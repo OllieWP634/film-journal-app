@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
 html, body {
     min-height: 100dvh;
 }
@@ -9,14 +11,17 @@ html, body {
  }
 
  body {
-    color: white;
     display: flex;
     flex-direction: column;
-    font-family: 'ubuntu';
-    background-size: 30%;
+    color: black;
+    background-color: white;
+    font-family: 'Roboto', sans-serif;
     padding-bottom: env(safe-area-inset-bottom);
-    background-image: url("../img/background-image-2.png");
     margin: 0;
+}
+
+button {
+    font-family: 'Roboto', sans-serif;
 }
 
 li {
@@ -25,7 +30,7 @@ li {
 
 a {
     text-decoration: none;
-    color: white;
+    color: black;
 }
 
 /* HEADER */
@@ -35,25 +40,25 @@ a {
     flex-direction: row;
     justify-content:space-around;
     align-items: center;
-    height: 5.5vh;
-    box-shadow: rgba(0, 0, 0, 0.712) 0px 8px 24px;
-    background-color:rgba(7, 13, 49, 0.199);
+    height: 8vh;
 }
 
 .header-center {
     font-size: 1.5rem;
+    margin-left: 4rem;
 }
 
 .header-right {
     display: flex;
     flex-direction: row;
-    margin-right: 2rem;
+    margin-right: 4rem;
+    margin-left: auto;
     font-size: 2rem;
     gap: 2rem;
 }
 
 .header a:hover {
-    color: #fcbdbd;
+    color: #ff2b2b;
 }
 
 /* LANDING PAGE */
@@ -61,7 +66,7 @@ a {
 .landing-page {
     display: flex;
     flex-direction: column;
-    height: 94.5vh;
+    height: 92vh;
 }
 
 /* LANDING PAGE HEADER */
@@ -76,26 +81,21 @@ a {
 
 .landing-page-header h2 {
     margin-bottom: 0;
-    font-size: 7rem;
-    font-style: italic;
-    background: linear-gradient(90deg, #ff9999, #ffffff, #ff6868, #ff9999);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-size: 200% auto;
-    letter-spacing: 3px;
-    text-shadow: 0 0 30px rgba(255, 153, 153, 0.637);
-    animation: gradientShift 8s ease infinite;
-}
+    font-size: 5rem;
 
-@keyframes gradientShift {
-    0% { background-position: 0% 50%; }
-    50% {background-position: 100% 50%;}
-    100% { background-position: 0% 50%; }
 }
 
 .landing-page-header p {
-    font-size: 5rem;
-    color:#fcbdbd;
+    font-size: 3rem;
+}
+
+/* UNDERLINE */
+
+#underline {
+    align-self: center;
+    height: 0.1rem;
+    background-color: black;
+    width: 100rem;
 }
 
 /* FILM CAROUSEL */
@@ -115,14 +115,39 @@ a {
     width: fit-content;
     gap: 3rem; 
     padding: 2rem 0; 
-    animation: continuous-scroll 30s linear infinite; 
+    animation: continuous-scroll 20s linear infinite; 
 }
 
 .poster {
     flex-shrink: 0;
     width: 35rem;
     height: 50rem;
-    background-color: grey;
+    border-radius: 1rem;
+    background-size: cover;
+}
+
+#batman {
+    background-image: url("../img/batman.png");
+}
+
+#inception {
+    background-image: url("../img/inception.png");
+}
+
+#lord-of-the-rings {
+    background-image: url("../img/lord-of-the-rings.png");
+}
+
+#pulp-fiction {
+    background-image: url("../img/pulp-fiction.png");
+}
+
+#shawshank {
+    background-image: url("../img/shawshank.png");
+}
+
+#star-wars {
+    background-image: url("../img/star-wars.png");
 }
 
 @keyframes continuous-scroll {
@@ -144,12 +169,14 @@ a {
 }
 
 .analyse-button button {
-    font-family: 'ubuntu';
     display: flex;
     align-items: center;
-    background-image: linear-gradient(#888888, #313131);
-    height: 12rem;
-    padding: 5rem;
-    border-radius: 3rem;
+    cursor: pointer;
+    border: none;
+    color: white;
+    background-color: rgb(15, 15, 15);
+    height: 7rem;
+    padding: 4rem;
+    border-radius: 1rem;
     font-size: 3rem;
 }
