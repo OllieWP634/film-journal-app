@@ -155,6 +155,26 @@ a {
     background-image: url("../img/star-wars.png");
 }
 
+#eternal-sunshine {
+    background-image: url("../img/eternal-sunshine.png");
+}
+
+#oppenheimer {
+    background-image: url("../img/oppenheimer.png");
+}
+
+#shining {
+    background-image: url("../img/shining.png");
+}
+
+#spirited-away {
+    background-image: url("../img/spirited-away.png");
+}
+
+#toy-story {
+    background-image: url("../img/toy-story.png");
+}
+
 @keyframes continuous-scroll {
     from {
         transform: translateX(0);
