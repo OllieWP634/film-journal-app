@@ -13,8 +13,9 @@ html, body {
     display: flex;
     flex-direction: column;
     font-family: 'ubuntu';
-    background: rgb(4, 0, 20);
+    background-size: 30%;
     padding-bottom: env(safe-area-inset-bottom);
+    background-image: url("../img/background-image-2.png");
     margin: 0;
 }
 
@@ -34,9 +35,9 @@ a {
     flex-direction: row;
     justify-content:space-around;
     align-items: center;
-    height: 6.5rem;
+    height: 5.5vh;
     box-shadow: rgba(0, 0, 0, 0.712) 0px 8px 24px;
-    background-color:rgb(7, 13, 49);
+    background-color:rgba(7, 13, 49, 0.199);
 }
 
 .header-center {
@@ -60,7 +61,7 @@ a {
 .landing-page {
     display: flex;
     flex-direction: column;
-    height: 100vh;
+    height: 94.5vh;
 }
 
 /* LANDING PAGE HEADER */
@@ -70,7 +71,7 @@ a {
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    height: 35rem;
+    height: 32rem;
 }
 
 .landing-page-header h2 {
@@ -131,4 +132,24 @@ a {
     to {
         transform: translateX(-860px); 
     }
+}
+
+/* ANALYSE FILMS BUTTON */
+
+.analyse-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5rem;
+}
+
+.analyse-button button {
+    font-family: 'ubuntu';
+    display: flex;
+    align-items: center;
+    background-image: linear-gradient(#888888, #313131);
+    height: 12rem;
+    padding: 5rem;
+    border-radius: 3rem;
+    font-size: 3rem;
 }
