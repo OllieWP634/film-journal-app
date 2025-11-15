@@ -1,0 +1,30 @@
+html, body {
+    min-height: 100dvh;
+}
+
+ html {
+  scroll-behavior: smooth !important;
+  -webkit-text-size-adjust: 100%;
+ }
+
+ body {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    font-family: 'ubuntu';
+    background: black;
+    padding-bottom: env(safe-area-inset-bottom);
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+html {
+    font-size: 50%;
+}
