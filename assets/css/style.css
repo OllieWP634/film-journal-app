@@ -50,9 +50,16 @@ a {
     margin-left: 4rem;
 }
 
+#header-divider {
+    width: 0.2rem;
+    height: 3rem;
+    background-color: black;
+}
+
 .header-right {
     display: flex;
     flex-direction: row;
+    align-items: center;
     margin-right: 4rem;
     margin-left: auto;
     font-size: 2rem;
@@ -78,29 +85,22 @@ a {
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    height: 32rem;
+    height: 25rem;
+    letter-spacing: 1px;
 }
 
 .landing-page-header h2 {
     margin-bottom: 0;
     font-size: 5rem;
-
 }
 
 .landing-page-header p {
     font-size: 3rem;
+    margin: 0;
+    margin-top: 1rem;
 }
 
 /* UNDERLINE */
-
-#underline {
-    align-self: center;
-    height: 0.1rem;
-    background-color: black;
-    width: 100rem;
-    margin-top: -4rem;
-    margin-bottom: 2rem;
-}
 
 /* FILM CAROUSEL */
 
@@ -125,7 +125,7 @@ a {
 .poster {
     flex-shrink: 0;
     width: 35rem;
-    height: 50rem;
+    height: 52.5rem;
     border-radius: 1rem;
     background-size: cover;
 }
@@ -180,7 +180,8 @@ a {
     color: white;
     background-color: rgb(15, 15, 15);
     height: 7rem;
-    padding: 4rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
     border-radius: 1rem;
     font-size: 3rem;
 }
