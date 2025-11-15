@@ -59,7 +59,42 @@ a {
 
 .landing-page {
     display: flex;
+    flex-direction: column;
     height: 100vh;
+}
+
+/* LANDING PAGE HEADER */
+
+.landing-page-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    height: 35rem;
+}
+
+.landing-page-header h2 {
+    margin-bottom: 0;
+    font-size: 7rem;
+    font-style: italic;
+    background: linear-gradient(90deg, #ff9999, #ffffff, #ff6868, #ff9999);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 200% auto;
+    letter-spacing: 3px;
+    text-shadow: 0 0 30px rgba(255, 153, 153, 0.637);
+    animation: gradientShift 8s ease infinite;
+}
+
+@keyframes gradientShift {
+    0% { background-position: 0% 50%; }
+    50% {background-position: 100% 50%;}
+    100% { background-position: 0% 50%; }
+}
+
+.landing-page-header p {
+    font-size: 5rem;
+    color:#fcbdbd;
 }
 
 /* FILM CAROUSEL */
