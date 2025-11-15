@@ -14,7 +14,7 @@ html, body {
     display: flex;
     flex-direction: column;
     color: black;
-    background-color: white;
+    background-color: rgba(221, 221, 221, 0.048);
     font-family: 'Roboto', sans-serif;
     padding-bottom: env(safe-area-inset-bottom);
     margin: 0;
@@ -41,6 +41,8 @@ a {
     justify-content:space-around;
     align-items: center;
     height: 8vh;
+    letter-spacing: 3px;
+    color: #990000;
 }
 
 .header-center {
@@ -57,8 +59,8 @@ a {
     gap: 2rem;
 }
 
-.header a:hover {
-    color: #ff2b2b;
+.header-right a {
+    color: #990000;
 }
 
 /* LANDING PAGE */
@@ -96,6 +98,8 @@ a {
     height: 0.1rem;
     background-color: black;
     width: 100rem;
+    margin-top: -4rem;
+    margin-bottom: 2rem;
 }
 
 /* FILM CAROUSEL */
