@@ -14,10 +14,11 @@ html, body {
     display: flex;
     flex-direction: column;
     color: black;
-    background-color: rgba(221, 221, 221, 0.048);
+    background-color: white;
     font-family: 'Roboto', sans-serif;
     padding-bottom: env(safe-area-inset-bottom);
     margin: 0;
+    background-image: url("../img/background-image.png")
 }
 
 button {
@@ -110,8 +111,6 @@ a {
     align-items: center;
     width: 100%;
     overflow: hidden;
-    -webkit-mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
-    mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
 }
 
 .carousel {
@@ -205,4 +204,27 @@ a {
     padding-right: 4rem;
     border-radius: 1rem;
     font-size: 3rem;
+}
+
+.masked-text {
+    font-size: 6rem;
+    font-weight: bold;
+    color: transparent;
+    background-image: url("../img/red-text-filter.jpg");
+    background-size: 200%;
+    background-position: 0 50%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: animate-background 10s infinite linear;
+    margin: 0;
+}
+
+@keyframes animate-background {
+    0% {
+        background-position: 0 50%;
+    }
+    100% {
+        background-position: 100% 50%;
+    }
 }
