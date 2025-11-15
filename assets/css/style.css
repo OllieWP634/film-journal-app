@@ -117,8 +117,6 @@ a {
     margin-top: 1rem;
 }
 
-/* UNDERLINE */
-
 /* FILM CAROUSEL */
 
 .carousel-container {
@@ -147,7 +145,7 @@ a {
     transition: 0.5s ease;
 }
 
-.poster:hover {
+.poster:hover, button:hover {
     transform: scale(105%);
 }
 
@@ -225,6 +223,7 @@ a {
     padding-right: 4rem;
     border-radius: 1rem;
     font-size: 3rem;
+    transition: 0.5s ease;
 }
 
 /* TITLE TEXT EFFECTS */
