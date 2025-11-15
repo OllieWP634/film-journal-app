@@ -1,16 +1,16 @@
-# LogBox
+# Filmlytic
 *A personal film journal web app built with FastAPI and SQL.*
 
 ## Overview  
-**LogBox** is a web application that allows users to log, rate, and reflect on their favourite films.  
-The project aims to integrate **data analysis** features to uncover insights such as genre trends, average ratings, and viewing habits.  
+**Filmlytic** is a web application that allows users to log their favourite films, generating new recommendations based on the movies selected.
+The project aims to integrate **data analysis** features to uncover insights such as genre trends, average ratings, and viewing habits.
 
 This project is currently **in development**, with backend services built using **FastAPI** and a **SQL database**, and plans for a lightweight frontend for user interaction and data visualisation.
 
 ## Tech Stack  
 - **Backend:** FastAPI (Python)
-- **Database:** SQL (planned)
-- **Frontend:** HTML, CSS, JavaScript (planned)
+- **Database:** SQL
+- **Frontend:** HTML, CSS, JavaScript
 - **Data Handling:** Pandas, JSON
 - **Version Control:** Git & GitHub
 
