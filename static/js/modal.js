@@ -11,3 +11,15 @@ function saveFilm() {
     document.getElementById(`card-${index}`).innerText = filmName;
     closeModal();
 }
+
+function generateRecommendations() {
+    fetch('/submit-films', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ films: selectedFilms })
+    })
+    .then(res => res.json())
+    .then(data => {
+        displayRecommendations(data.recommended);
+    });
+}
