@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+html, body {
+    min-height: 100dvh;
+}
+
+ html {
+    scroll-behavior: smooth !important;
+    -webkit-text-size-adjust: 100%;
+    font-size: 50%;
+ }
+
+ body {
+    display: flex;
+    flex-direction: column;
+    color: black;
+    background-color: white;
+    font-family: 'Roboto', sans-serif;
+    padding-bottom: env(safe-area-inset-bottom);
+    margin: 0;
+    background-color: #ECECEC;
+    background-image: url("../img/background-image.png");
+    background-repeat: repeat;
+    background-attachment: fixed;
+    animation: moveBackground 50s infinite;
+}
+
+/* BACKGROUND ANIMATION */
+
+@keyframes moveBackground {
+    0%
+    {
+        background-position: 0% 0%;
+    }
+    50%
+    {
+        background-position: 0% 50%;
+    }
+    100% 
+    {
+        background-position: 0% 0%;
+    }
+}
+
+button {
+    font-family: 'Roboto', sans-serif;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.page-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+/* MOVIE POSTER INPUT */
+
+.carousel-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 80vw;
+    gap: 3rem;
+}
+
+.poster {
+    width: 35rem;
+    height: 50rem;
+    border-radius: 1rem;
+    background-color: rgb(66, 66, 66);
+    background-size: cover;
+    box-shadow: rgba(0, 0, 0, 1) 0px 0px 15px;
+    border: 0.5rem solid black;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
