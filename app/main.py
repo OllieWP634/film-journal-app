@@ -21,3 +21,14 @@ app.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"]
 )
+
+class FilmInput(BaseModel):
+    films: list[str]
+
+@app.post("/submit-films")
+def submit_films(input: FilmInput):
+    recommended = generate_recommendations(input.films)
+    return {"recommended": recommended}
+
+def generate_recommendations():
+    return
