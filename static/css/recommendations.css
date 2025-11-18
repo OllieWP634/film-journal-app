@@ -57,11 +57,92 @@ a {
 
 .page-container {
     display: flex;
-    justify-content: center;
+    justify-content: top;
     align-items: center;
     flex-direction: column;
-    height: 100vh;
+    height: 92vh;
 }
+
+/* HEADER */
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    align-items: center;
+    height: 8vh;
+    letter-spacing: 3px;
+    color: #990000;
+}
+
+.header-center {
+    font-size: 1.5rem;
+    margin-left: 4rem;
+}
+
+#header-divider {
+    width: 0.2rem;
+    height: 3rem;
+    background-color: black;
+}
+
+.header-right {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-right: 4rem;
+    margin-left: auto;
+    font-size: 2rem;
+    gap: 2rem;
+}
+
+.header-right a {
+    color: #990000;
+}
+
+/* RECOMMENDATION PAGE HEADER */
+
+.landing-page-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    height: 25rem;
+    letter-spacing: 1px;
+    margin-top: 10rem;
+}
+
+.landing-page-header p {
+    font-size: 3rem;
+    margin: 0;
+    margin-top: 1rem;
+}
+
+/* TITLE TEXT EFFECTS */
+
+.masked-text {
+    font-size: 6rem;
+    font-weight: bold;
+    color: transparent;
+    background-image: url("../img/red-text-filter.jpg");
+    background-size: 200%;
+    background-position: 0 50%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: animate-background 10s infinite linear;
+    margin: 0;
+}
+
+@keyframes animate-background {
+    0% {
+        background-position: 0 50%;
+    }
+    100% {
+        background-position: 100% 50%;
+    }
+}
+
 
 /* MOVIE POSTER INPUT */
 
@@ -69,20 +150,45 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     flex-direction: row;
-    width: 80vw;
+    width: 90vw;
     gap: 3rem;
 }
 
 .poster {
-    width: 35rem;
-    height: 50rem;
+    width: auto;
+    flex: 1 1 0;
+    height: 40rem;
     border-radius: 1rem;
-    background-color: rgb(66, 66, 66);
+    background-color: rgb(223, 223, 223);
     background-size: cover;
     box-shadow: rgba(0, 0, 0, 1) 0px 0px 15px;
     border: 0.5rem solid black;
     transition: 0.5s ease;
     cursor: pointer;
+}
+
+/* ANALYSE FILMS BUTTON */
+
+.analyse-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5rem;
+}
+
+.analyse-button button {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    border: none;
+    color: white;
+    background-color: rgb(15, 15, 15);
+    height: 7rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    border-radius: 1rem;
+    font-size: 3rem;
+    transition: 0.5s ease;
 }
