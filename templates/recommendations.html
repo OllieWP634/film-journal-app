@@ -39,34 +39,15 @@
             <a href="./recommendations.html"><button>GET RECOMMENDATIONS</button></a>
         </div>
 
-        <div id="project-modal" class="modal">
+        <div id="filmModal" class="modal-overlay">
             <div class="modal-content">
-
-                <button class="modal-close">&times;</button>
-
-                <div class="modal-header">
-                    <h2 id="modal-title"></h2>
-                    <div id="line-break"></div>
-                </div>
-
-                <div class="modal-sections">
-
-                    <section class="modal-section">
-                        <h4>Search for a film...</h4>
-                        <p id="modal-search"></p>
-                    </section>
-
-                    <section class="modal-section">
-                        <h4>Key Responsibilities</h4>
-                        <ul id="modal-films"></ul>
-                    </section>
-
-                </div>
-                
+                <input type="text" id="filmSearch" placeholder="Search for a film..." />
             </div>
         </div>
 
     </div>
+
+    <script src="../static/js/modal.js"></script>
     
 </body>
 </html>

@@ -1,25 +1,11 @@
-function openModal(index) {
-    const modal = document.getElementById('poster');
-    modal.style.display = 'block';
-    modal.dataset.cardIndex = index;
-}
+document.querySelectorAll('.poster').forEach(card => {
+  card.addEventListener('click', () => {
+    document.getElementById('filmModal').style.display = 'flex';
+  });
+});
 
-function saveFilm() {
-    const index = document.getElementById('film-modal').dataset.cardIndex;
-    const filmName = document.getElementById('film-input').value;
-    selectedFilms[index] = filmName;
-    document.getElementById(`card-${index}`).innerText = filmName;
-    closeModal();
-}
-
-function generateRecommendations() {
-    fetch('/submit-films', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ films: selectedFilms })
-    })
-    .then(res => res.json())
-    .then(data => {
-        displayRecommendations(data.recommended);
-    });
-}
+document.getElementById('filmModal').addEventListener('click', (e) => {
+  if (e.target.id === "filmModal") {
+    document.getElementById('filmModal').style.display = 'none';
+  }
+});
