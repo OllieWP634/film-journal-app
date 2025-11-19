@@ -3,6 +3,7 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 from typing import List
+import sqlite3
 
 app = FastAPI()
 
@@ -21,16 +22,3 @@ app.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"]
 )
-
-class FilmInput(BaseModel):
-    films: list[str]
-
-@app.post("/submit-films")
-def submit_films(input: FilmInput):
-    recommended = generate_recommendations(input.films)
-    return {"recommended": recommended}
-
-# input.films = ["Inception, Shawshank, Star Wars"]
-
-def generate_recommendations():
-    return

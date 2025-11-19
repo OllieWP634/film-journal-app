@@ -1,0 +1,17 @@
+# Virtual environment
+venv/
+.env
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Database files (if using SQLite)
+*.db
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
