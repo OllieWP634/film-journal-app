@@ -157,9 +157,9 @@ a {
 }
 
 .poster {
+    aspect-ratio: 2 / 3; 
     width: auto;
-    flex: 1 1 0;
-    height: 40rem;
+    height: 30rem;
     border-radius: 1rem;
     background-color: rgb(223, 223, 223);
     background-size: cover;
